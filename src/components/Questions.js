@@ -1,7 +1,7 @@
 import Question from "./Question"
 
 // holds all questions
-const Questions = () => {
+const Questions = ({ questionChange }) => {
     // points are rating for low = darkside, high = lightside
     const questionArray = [
         {
@@ -40,9 +40,9 @@ const Questions = () => {
             id: '2',
             question: 'If I could have any weapon I would choose...',
             choices: {
-                choice_1: 'Lightsaber — blasters are so uncivilized',
-                choice_2: 'Blaster — nothing beats a good blaster',
-                choice_3: 'Forget lightsabers or blasters, all I need are my two fists!',
+                choice_1: 'Blaster — nothing beats a good blaster.',
+                choice_2: 'Lightsaber — blasters are so uncivilized.',
+                choice_3: 'Bare — Forget lightsabers or blasters, all I need are my two fists and the force!',
                 choice_4: '',
             },
             points: { // how many points are received for each question
@@ -140,9 +140,9 @@ const Questions = () => {
     return (
         <div className='questions-wrap'>
             {questionArray.map((questionElement) => (
-                <Question key={questionElement.id} question={questionElement}></Question>
+                <Question key={questionElement.id} questionElement={questionElement} questionChange={questionChange}></Question>
+
             ))}
-            {/* todo put multiple questions here */}
         </div>
     )
 }

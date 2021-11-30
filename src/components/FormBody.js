@@ -1,12 +1,14 @@
 import Questions from "./Questions";
+import { useRef } from "react";
 
-
-
-const FormBody = ({ onSubmit }) => {
+// ? send this to app.js
+const FormBody = ({ questionChange }) => {
     // where all the questions go
     const submitHandler = (e) => {
         e.preventDefault();
 
+
+        console.log(e.target.value)
         // ! if question is not answered, send alert
         // todo required in each question field
 
@@ -15,7 +17,7 @@ const FormBody = ({ onSubmit }) => {
 
     return (
         <form className='question-form' onSubmit={submitHandler}>
-            <Questions></Questions>
+            <Questions questionChange={questionChange}></Questions>
             <input type="submit" value='Submit' className='btn btn-submit' />
         </form>
     )
