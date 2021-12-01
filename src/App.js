@@ -12,52 +12,67 @@ function App() {
   // stores answers to questions
   const [questionAnswer, setQuestionAnswer] = useState([
     {
-      question1: ''
+      id: '0',
+      givenAnswer: ''
     },
     {
-      question2: ''
+      id: '1',
+      givenAnswer: ''
     },
     {
-      question3: ''
+      id: '2',
+      givenAnswer: ''
     },
     {
-      question4: ''
+      id: '3',
+      givenAnswer: ''
     },
     {
-      question5: ''
+      id: '4',
+      givenAnswer: ''
     },
     {
-      question6: ''
+      id: '5',
+      givenAnswer: ''
     },
     {
-      question7: ''
+      id: '6',
+      givenAnswer: ''
     },
     {
-      question8: ''
+      id: '7',
+      givenAnswer: ''
     },
   ])
 
-  // first digit is question id, second is question answer (1-4)
+  // first digit is question id, second is question answer (1-4) console.log(questionAnswer.id + ' id')
   const questionChangeHandler = (answer) => {
-    console.log(answer); // ! works!!!
-    // todo grab first digit & second digit separately
-    // todo put in correct spot using first digit
-    // todo use second digit to save as data in given spot
-
-    setQuestionAnswer();
+    // grab first digit & second digit separately
+    const questionID = answer.substring(0, 1);
+    const questionSelected = answer.substring(1);
+    setQuestionAnswer(questionAnswer.map((element) => element.id === questionID ? { ...element, givenAnswer: questionSelected } : element))
+    // console.log(questionAnswer.id + ' id')
   }
 
   // todo handle submit
 
   // stores collected data
-  const dataStore = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
 
+    // ! WORKS
+
+    console.log(questionAnswer)
+
+
+    // todo calculations
+    // todo leads to next page 
   }
 
   return (
     <div className='container'>
       <Header></Header>
-      <FormBody onSubmit={dataStore} questionChange={questionChangeHandler}></FormBody>
+      <FormBody submitHandler={submitHandler} questionChange={questionChangeHandler}></FormBody>
     </div>
   );
 }

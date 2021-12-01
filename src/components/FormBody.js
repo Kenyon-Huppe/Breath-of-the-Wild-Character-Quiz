@@ -1,18 +1,18 @@
 import Questions from "./Questions";
-import { useRef } from "react";
+
 
 // ? send this to app.js
-const FormBody = ({ questionChange }) => {
+const FormBody = ({ questionChange, submitHandler }) => {
     // where all the questions go
-    const submitHandler = (e) => {
-        e.preventDefault();
+    // const submitHandler = (e) => {
+    //     e.preventDefault();
 
 
-        console.log(e.target.value)
-        // ! if question is not answered, send alert
-        // todo required in each question field
+    //     console.log(e.target.value)
+    //     // ! if question is not answered, send alert
+    //     // todo required in each question field
 
-    }
+    // }
 
 
     return (

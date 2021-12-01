@@ -5,6 +5,7 @@ const Question = ({ questionElement, questionChange }) => {
 
     return (
         <div className='question-wrap' required>
+            <h2 className='questionHeading'>{questionElement.question}</h2>
             <div className='question question-1'>
                 <input type="radio" name={questionElement.id} value={`${questionElement.id}1`} onChange={() => questionChange(`${questionElement.id}1`)} /><span className='question-text'>{questionElement.choices.choice_1}</span>
             </div>
