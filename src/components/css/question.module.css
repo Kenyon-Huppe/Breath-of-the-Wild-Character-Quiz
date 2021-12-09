@@ -1,0 +1,18 @@
+.questionWrap{
+    /* text-align: center; */
+    /* display: flex;
+    flex-flow: column nowrap;
+    align-items: center; */
+    width: 47em;
+    margin: 0 auto;
+}
+.questionHeading{
+    text-align: center;
+}
+.question{
+    margin: 1em 0 0 6.7em;
+}
+.questionText{
+    margin-left: .3em;
+    /* margin-left: 0; */
+}

@@ -6,12 +6,12 @@ const Questions = ({ questionChange }) => {
     const questionArray = [
         {
             id: '0',
-            question: 'Those who know me well would describe me as...',
+            question: 'Many would describe my work ethic as being...',
             choices: {
-                choice_1: 'Caring and thoughtful — always looking out for the \'little guy\'. ',
-                choice_2: 'Ambitious and passionate — constantly on the grind to become \'the best\'. ',
-                choice_3: 'Relaxed and carefree — takes life one day at a time.',
-                choice_4: 'Inquisitive and knowledgeable — loves learning for the sake of aquiring knowledge. ',
+                choice_1: 'Driven & focused; to stop at no ends to achieve the objective',
+                choice_2: 'flexible yet disciplined; There is always something you can improve at',
+                choice_3: 'Filled with a sense of duty when the going gets rough, but otherwise....',
+                choice_4: 'Relaxed and carefree — takes life one day at a time.',
             },
             points: { // how many points are received for each question
                 c1: 3,
@@ -22,12 +22,12 @@ const Questions = ({ questionChange }) => {
         },
         {
             id: '1',
-            question: 'If I was tasked with destroying an enemy conpound, I would...',
+            question: 'I feel most relaxed when...',
             choices: {
-                choice_1: 'Charge in guns blazing — shellshock them by going in hard and fast.',
-                choice_2: 'Patiently wait and strategize — moving in too fast without a plan is a fool\'s errand.',
-                choice_3: 'Charge in or strategize? Why not both? — plan out a plan of attack, then immediately throw out the plan when things start to fall apart.',
-                choice_4: '',
+                choice_1: 'Honing my craft. There is nothing more enjoyable then seeing your skills progress',
+                choice_2: 'Reflecting & working through problems. Gaining a greater understanding makes me feel whole.',
+                choice_3: 'Escaping into my imagination through books or movies. Why dwell on this reality when I can escape to another?',
+                choice_4: 'Spending time with those that matter in my life. Connection with others is the purpose of life.',
             },
             points: { // how many points are received for each question
                 c1: 1,
@@ -38,12 +38,12 @@ const Questions = ({ questionChange }) => {
         },
         {
             id: '2',
-            question: 'If I could have any weapon I would choose...',
+            question: 'If I could be any animal I would be...',
             choices: {
-                choice_1: 'Blaster — nothing beats a good blaster.',
-                choice_2: 'Lightsaber — blasters are so uncivilized.',
-                choice_3: 'Bare — Forget lightsabers or blasters, all I need are my two fists and the force!',
-                choice_4: '',
+                choice_1: 'An eagle. A symbol of power, soaring through the open sky\s, demonstrating to those below the mastery of flight!',
+                choice_2: 'An owl. Carefully perched in a high tree. Planning & plotting the next strike against an unlucky field mouse.',
+                choice_3: 'A salmon. Demonstrating fluidity & motion. gliding through the water with effortless grace.',
+                choice_4: 'A rock.',
             },
             points: { // how many points are received for each question
                 c1: 0,
@@ -55,12 +55,12 @@ const Questions = ({ questionChange }) => {
         },
         {
             id: '3',
-            question: 'Which creed most aligns with your ideals?',
+            question: 'I express my affection for others by...',
             choices: {
-                choice_1: 'There is not emotion, there is peace. There is not ignorance, there is knowledge. There is no passion, there is serenity. There is no chaos, there is harmony. There is no death, there is the Force.',
-                choice_2: 'Peace is a lie, there is only passion, through passion, I gain strength. Through strength, I gain power. Through power, I gain victory. Through victory, my chains are broken. The Force shall set me free.',
-                choice_3: 'There is no dark side, nor a light side. There is only  the Force. I will do what I must to keep the balance. There is no good without evil, but evil must not be allowed to flourish. There is passion, yet peace. There is serenity, yet emotion. There is chaos, yet order.',
-                choice_4: '',
+                choice_1: 'Helping them out with various tasks or things that need to be done.',
+                choice_2: 'Talking to each other & generally checking up on how they are doing.',
+                choice_3: 'Exchanging gifts & various items that I spent time making',
+                choice_4: 'Spending time with them & simply being in their presence.',
             },
             points: { // how many points are received for each question
                 c1: 3,
@@ -71,12 +71,12 @@ const Questions = ({ questionChange }) => {
         },
         {
             id: '4',
-            question: 'Which force power calls to you the most?',
+            question: 'Many would describe me as...',
             choices: {
-                choice_1: 'Force Lightning — shoot powerfull lightning from your fingertips.',
-                choice_2: 'Shatterpoint — be able to see an enemies weakspots.',
-                choice_3: 'Mental Probe — read the thoughts & memories of others.',
-                choice_4: 'Force Visions — see life-like vision of the future or posiblities of what is to come.',
+                choice_1: 'Quiet but extremely confident in my abilities.',
+                choice_2: 'naturally curious with a hint of stubborness.',
+                choice_3: 'Friendly, yet reserved. making sure to check in with those close to me.',
+                choice_4: 'Bubbly & outgoing, making sure everyone is doing alright.',
             },
             points: { // how many points are received for each question
                 c1: 1,
@@ -88,12 +88,12 @@ const Questions = ({ questionChange }) => {
 
         {
             id: '5',
-            question: 'How are you most likely to respond when someone bests you?',
+            question: 'If I was attacking an enemy I would...',
             choices: {
-                choice_1: 'They were simply better than me. Good for them. I will train to become stronger regardless if I ever surpass them in skill',
-                choice_2: 'I will not let this great discrace of a loss continue any further. I will relentlessly train untill I dominate them in strength and ability.',
-                choice_3: '',
-                choice_4: '',
+                choice_1: 'Blind them, then attack when they\'re disoriented.',
+                choice_2: 'An equal amount of offense & defense.',
+                choice_3: 'Through attrition. slowly wear them down until they can\'t fight anymore.',
+                choice_4: 'Overwhelm them with a direct attack.',
             },
             points: { // how many points are received for each question
                 c1: 4,
@@ -102,38 +102,38 @@ const Questions = ({ questionChange }) => {
                 c4: 0,
             }
         },
-        {
-            id: '6',
-            question: 'Out of the choices below, which planet would you live on?',
-            choices: {
-                choice_1: 'Naboo — I like to lie out on the sand and let the sun dry me and try to guess the names of the birds singing.',
-                choice_2: 'Coruscant — I love the big city. I want to be where everythings happening and going down.',
-                choice_3: 'Kashyyyk — I wish to become one with nature. To learn ways of the Wookies and earn their respect.',
-                choice_4: 'Hoth — Throw me to the ice and stone! I wish to survive the elements alone and become stronger.',
-            },
-            points: { // how many points are received for each question
-                c1: 0,
-                c2: 0,
-                c3: 0,
-                c4: 0,
-            } // todo tag locations
-        },
-        {
-            id: '7',
-            question: 'What are your thoughts on sand?',
-            choices: {
-                choice_1: 'I don\'t like sand. It\'s coarse and rough and irritating — and it gets everywhere.',
-                choice_2: 'I like sand. It\'s fine and smooth and calming — and it easy to clean.',
-                choice_3: 'Sand is a valuable resource by which we can make various tools to profit with.',
-                choice_4: ''
-            },
-            points: { // how many points are received for each question
-                c1: 1,
-                c2: 3,
-                c3: 2,
-                c4: 0,
-            }
-        },
+        // {
+        //     id: '6',
+        //     question: 'Out of the choices below, which planet would you live on?',
+        //     choices: {
+        //         choice_1: 'Naboo — I like to lie out on the sand and let the sun dry me and try to guess the names of the birds singing.',
+        //         choice_2: 'Coruscant — I love the big city. I want to be where everythings happening and going down.',
+        //         choice_3: 'Kashyyyk — I wish to become one with nature. To learn ways of the Wookies and earn their respect.',
+        //         choice_4: 'Hoth — Throw me to the ice and stone! I wish to survive the elements alone and become stronger.',
+        //     },
+        //     points: { // how many points are received for each question
+        //         c1: 0,
+        //         c2: 0,
+        //         c3: 0,
+        //         c4: 0,
+        //     } // todo tag locations
+        // },
+        // {
+        //     id: '7',
+        //     question: 'What are your thoughts on sand?',
+        //     choices: {
+        //         choice_1: 'I don\'t like sand. It\'s coarse and rough and irritating — and it gets everywhere.',
+        //         choice_2: 'I like sand. It\'s fine and smooth and calming — and it easy to clean.',
+        //         choice_3: 'Sand is a valuable resource by which we can make various tools to profit with.',
+        //         choice_4: ''
+        //     },
+        //     points: { // how many points are received for each question
+        //         c1: 1,
+        //         c2: 3,
+        //         c3: 2,
+        //         c4: 0,
+        //     }
+        // },
     ]
 
     // todo make sure to have checker in Question that checks if choice_ is empty. If so, don't log

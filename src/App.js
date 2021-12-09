@@ -1,12 +1,17 @@
 import './App.css';
 import Header from './components/Header'
 import FormBody from './components/FormBody'
+import Calculations from './components/secondPage/Calculations'
 import { useState } from 'react';
+import DisplayPage from './components/secondPage/DisplayPage';
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
 
-
-  // todo store state here (answers from questions)
+  // todo header.module.css current working place
+  // todo use css to decrease img size, capitalize name, layout
+  // todo look into fonts
 
 
   // stores answers to questions
@@ -35,14 +40,14 @@ function App() {
       id: '5',
       givenAnswer: ''
     },
-    {
-      id: '6',
-      givenAnswer: ''
-    },
-    {
-      id: '7',
-      givenAnswer: ''
-    },
+    // {
+    //   id: '6',
+    //   givenAnswer: ''
+    // },
+    // {
+    //   id: '7',
+    //   givenAnswer: ''
+    // },
   ])
 
   // first digit is question id, second is question answer (1-4) console.log(questionAnswer.id + ' id')
@@ -56,24 +61,44 @@ function App() {
 
   // todo handle submit
 
+
+
   // stores collected data
   const submitHandler = (e) => {
     e.preventDefault();
 
-    // ! WORKS
 
-    console.log(questionAnswer)
 
+
+    // ! WORKS: saves all given answer choices for each question in state after submit
+
+
+    // todo have calc component
+    // todo have state with id for each question & point values for each selection option
+    // todo if question id === given id && question selection === selection, then add to running point total / given args for character
 
     // todo calculations
     // todo leads to next page 
   }
 
+  // sets it up to specific page
+  const homePage = <div><Header></Header>
+    <FormBody submitHandler={submitHandler} questionChange={questionChangeHandler}></FormBody></div>;
+
   return (
     <div className='container'>
-      <Header></Header>
-      <FormBody submitHandler={submitHandler} questionChange={questionChangeHandler}></FormBody>
-    </div>
+      <Routes>
+
+        {/* home */}
+        <Route path='/' element={homePage} exact>
+        </Route>
+        {/* display */}
+        <Route path='/display-page' element={<DisplayPage data={questionAnswer} />} exact>
+        </Route>
+      </Routes>
+
+      {/* <Calculations questionAnswer={questionAnswer}></Calculations> */}
+    </div >
   );
 }
 

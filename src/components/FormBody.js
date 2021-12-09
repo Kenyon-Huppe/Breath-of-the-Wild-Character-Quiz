@@ -1,4 +1,5 @@
 import Questions from "./Questions";
+import { Link } from "react-router-dom";
 
 
 // ? send this to app.js
@@ -18,7 +19,9 @@ const FormBody = ({ questionChange, submitHandler }) => {
     return (
         <form className='question-form' onSubmit={submitHandler}>
             <Questions questionChange={questionChange}></Questions>
-            <input type="submit" value='Submit' className='btn btn-submit' />
+            <Link to='/display-page'>
+                <input type="submit" value='Submit' className='btn btn-submit' />
+            </Link>
         </form>
     )
 }

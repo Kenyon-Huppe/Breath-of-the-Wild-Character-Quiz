@@ -1,0 +1,28 @@
+/* todo fix color picker pop up box */
+/* todo change background to own image in html */
+
+.header{
+    margin: 0 5em 10em 5em;
+    padding: 5em 0 50em;
+    text-align: center;
+    background-image: url('./banner.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.heading{
+    margin: 0 auto;
+    /* background-color: #fff; */
+    width: 15em;
+}
+.title{
+    /* margin-top: 3em; */
+}
+.intro{
+    /* margin-top: 1em; */
+}
+.prompt{
+    /* margin: 0.5em 0 8em; */
+    font-size: 1.4em;
+}
