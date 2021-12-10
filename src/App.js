@@ -9,9 +9,11 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
 
-  // todo header.module.css current working place
+  // todo header.module.css for instruction
   // todo use css to decrease img size, capitalize name, layout
   // todo look into fonts
+  // todo responsive 
+  // todo change project name
 
 
   // stores answers to questions
