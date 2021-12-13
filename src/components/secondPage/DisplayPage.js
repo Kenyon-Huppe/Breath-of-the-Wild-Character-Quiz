@@ -4,14 +4,7 @@ import Calculations from "./Calculations"
 const DisplayPage = ({ data }) => {
     return (
         <div>
-            Display Page
-            {/* ! WORKS */}
-
-            <h2>{JSON.stringify(data)} Display</h2>
-
             <Calculations data={data} />
-
-
         </div>
 
     )

@@ -1,0 +1,34 @@
+.bioContainer{
+    text-align: center;
+    margin: 0 0 4em;
+}
+.characterName{
+    font-size: 2em;
+}
+.characterImg{
+    margin: 2em auto;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterText{
+    font-size: 1.2em;
+    text-align: left;
+    width: 40em;
+    margin: 2em auto;
+}
+
+@media(max-width: 800px){
+    .characterText{
+        width: 25em;
+    }
+}
+
+@media(max-width: 515px){
+    .characterText{
+        width: 15em;
+    }
+}

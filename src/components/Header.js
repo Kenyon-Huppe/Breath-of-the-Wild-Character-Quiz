@@ -7,7 +7,7 @@ const Header = () => {
             <h1 className={`${classes.heading} ${classes.title}`}>Breath of the Wild Character Quiz</h1>
             <h2 className={`${classes.heading} ${classes.intro}`}>Who Are You?</h2>
             <h4 className={`${classes.heading} ${classes.prompt}`}>Take the Quiz Below!</h4>
-            <img src="/img/banner.png" alt="image" className={classes.banner} />
+            <img src="/img/banner.png" alt="" className={classes.banner} />
         </div>
     )
 }

@@ -2,19 +2,19 @@
 
 
 .header{
-    margin: 0 5em 0em 5em;
+    margin: 0 0em 0em 0em;
     padding: 5em 0 0;
     text-align: center;
-    /* background-image: url('./banner.png'); */
-    /* background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
     height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .heading{
     margin: 0 auto;
     /* background-color: #fff; */
-    width: 15em;
+    width: auto;
 }
 .title{
     /* margin-top: 3em; */
@@ -28,5 +28,11 @@
 }
 .banner{
     margin: 2em auto;
-    width: 1000px;
+    max-width: 1000px;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

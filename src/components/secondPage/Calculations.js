@@ -2,8 +2,8 @@ import Bio from "./Bio";
 
 const Calculations = ({ data }) => {
 
-    // todo calculate given character
     /*
+    calculate given character
         0-9: Revali
         10-19: Link
         20-29: Zelda
@@ -22,7 +22,6 @@ const Calculations = ({ data }) => {
     const evaluatePoints = () => {
         let totalPoints = 0;
         data.forEach(element => {
-
             switch (element.givenAnswer) {
                 case '1':
                     totalPoints += 0;
@@ -40,14 +39,11 @@ const Calculations = ({ data }) => {
                     break;
             }
         });
-        console.log('total points: ' + totalPoints);
         return totalPoints;
     }
 
     const evaluateCharacter = () => {
-
         const totalPoints = evaluatePoints();
-        console.log(totalPoints);
         if (totalPoints <= 10) {
             return 'revali';
         } else if (totalPoints >= 11 && totalPoints <= 20) {

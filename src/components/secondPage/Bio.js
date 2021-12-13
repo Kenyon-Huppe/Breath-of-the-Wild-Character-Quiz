@@ -2,14 +2,10 @@ import classes from '../css/bio.module.css'
 
 // image & description of charcter / personality
 const Bio = ({ characterName }) => {
-    console.log(`Bio arg: ${characterName}`);
-
-
     /**
      * asign src link to correct image to variable
      * asign text to variable
      */
-
     let imgLink = '';
     let bioText = '';
 
@@ -30,14 +26,14 @@ const Bio = ({ characterName }) => {
         bioText = 'You are a strong & wise individual. In a group you act as the adult, balancing others out & settling disputes. Many look to you as a leader & someone with reliablity. When injustices are commited, you are the first to speak up & make it known that you will not stand for it. While you are steadfast in your conviction, this does not mean that you are cold. Rather, you are quite the charasmatic individual, making for a natual born leader. With that said, while your pursuits are admirable, make sure not to overextend yourself. There is only one of you & a world of problems, at the end of the day.'
     } else {
         imgLink = '/img/duruk.PNG'
-        bioText = 'You are the glue of the group. Wanting nothing more than for everyone to get along & be a part of the same team, you are quite a popular individual. Your big personality & natual charm always make you life the party whenever you enter a room. Due to your generous persona, you strive to always look out for the little guy & be a shield for those you care about in your life. while this outward openness can lead to many friendships, it unfortunatly also leads to many shallow friendships.'
+        bioText = 'You are the glue of the group. Wanting nothing more than for everyone to get along & be a part of the same team, you are quite a popular individual. Your big personality & natual charm always make you life the party whenever you enter a room. Due to your generous persona, you strive to always look out for the little guy & be a shield for those you care about in your life. while this outward openness can lead to many friendships, it unfortunatly can also lead to you shouldering too big a burden. Remember to also put yourself first.'
     }
 
     return (
-        <div>
-            <h1 className='characterName'>You got {characterName}!</h1>
-            <img src={imgLink} alt='image' className='characterImg'></img>
-            <p className='characterText'>{bioText}</p>
+        <div className={classes.bioContainer}>
+            <h1 className={classes.characterName}>You got {characterName}!</h1>
+            <img src={imgLink} alt="" className={classes.characterImg} style={{ width: '500px' }}></img>
+            <p className={classes.characterText}>{bioText}</p>
         </div>
     )
 }

@@ -3,7 +3,7 @@
     /* display: flex;
     flex-flow: column nowrap;
     align-items: center; */
-    width: 47em;
+    width: auto;
     margin: 0 auto;
     /* background-color: #51b7f4 */
 }
@@ -11,17 +11,26 @@
     text-align: center;
 }
 .question{
-    margin: 1em 0 0 6.7em;
+    width: 30em;
+    margin: 1em auto
+    /* text-align: center; */
 }
 .questionText{
-    margin-left: .3em;
+    /* margin-left: .3em; */
+    width: 25em;
     /* margin-left: 0; */
 }
 
 .submitBtn{
     display: flex;
     justify-content: center;
-    width: 5em;
+    width: auto;
     margin: 3em auto;
     font-size: 1.2em;
+}
+
+@media(max-width: 566px){
+    .question{
+        width: 17em;
+    }
 }
